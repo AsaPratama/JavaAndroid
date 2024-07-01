@@ -4,7 +4,7 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
+
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
     EditText pelanggan, harga, kuantitas, uang, diskon;
     Button proses;
-    TextView total, kembalian;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,7 +47,8 @@ public class MainActivity extends AppCompatActivity {
         proses.setOnClickListener(v ->{
 
             //ambil nilai dari variable
-            String pelanggan1 = pelanggan.getText().toString();
+            // Var pelanggan1 never use
+            //String pelanggan1 = pelanggan.getText().toString();
             Integer harga1 = Integer.parseInt(harga.getText().toString());
             Integer kuantitas1 = Integer.parseInt(kuantitas.getText().toString());
             Integer uang1 = Integer.parseInt(uang.getText().toString());
